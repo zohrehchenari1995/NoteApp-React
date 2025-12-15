@@ -1,0 +1,218 @@
+:root {
+  --slate-300: #cbd5e1;
+  --slate-200: #dae3ee;
+  --slate-400: #798087;
+  --slate-700: #334155;
+  --blue-700: #1d4ed8;
+}
+
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+.all__body {
+  background: var(--slate-300);
+ }
+.app-title__sort {
+  display: flex;
+  flex-direction: column;
+  border-bottom: 1px solid var(--slate-700);
+  margin-bottom: 1rem;
+  padding: 1rem;
+  min-height: 80px;
+}
+.app__title {
+  margin-bottom: 0.1rem;
+  font-size: 1.5rem;
+  padding-top: 0.5rem;
+}
+.app__sort {
+  appearance: auto;
+  padding: 0.5rem 1rem;
+  margin: 0.25rem  0 !important;
+  width: 100%;
+  max-width: 280px;
+  position: relative;
+  z-index: 10;
+  border-radius: 8px;
+  outline: none;
+  border: 1px solid var(--slate-300);
+ 
+
+}
+
+.app__title-addNote {
+  /* background-color: lightcoral; */
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+}
+.app__input {
+  display: flex;
+  flex-direction: column;
+}
+.app__input input {
+  padding: 0.8rem 1rem;
+  margin-bottom: 1rem;
+  outline: none;
+  border: 1px solid var(--slate-300);
+  border-radius: 8px;
+  /* box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.2); */
+  font-weight: 700;
+}
+.app__button-add {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 0.8rem 1rem;
+  outline: none;
+  border-radius: 8px;
+  background-color: var(--blue-700);
+  border: 1px solid var(--blue-700);
+  color: white;
+  font-size: 1rem;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+  cursor: pointer;
+}
+
+/*---------------------------- SHOW DETAIL */
+.app__show-NewNote {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 auto;
+}
+/* .app__title-showNote{
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+} */
+.app__button-status {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+.app__button-status .button__status .status {
+  outline: none;
+  border: 1px solid var(--slate-300);
+  background-color: var(--slate-300);
+  color: var(--slate-700);
+  font-weight: bold;
+  font-size: 1rem;
+}
+.app__button-status .button__status .status__number {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 0.5rem;
+  width: 20px;
+  height: 20px;
+  background-color: var(--slate-400);
+  border-radius: 50%;
+  color: var(--slate-200);
+}
+.app__show-detail {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  flex: 1 1 auto;
+  height: 100px;
+  border-radius: 8px;
+  padding: 0 1.2rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+}
+.app__show-detail .detail {
+  margin-bottom: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  padding: 0.5rem 0;
+  font-size: 0.8rem;
+}
+
+.app__show-detail .detail__title {
+  margin-bottom: 0.5rem;
+  color: var(--slate-700);
+  font-size: 1rem;
+}
+.detail__title.completed{
+  opacity: 0.8;
+  text-decoration: line-through;
+}
+.app__show-detail .detail__description {
+  margin-bottom: 0.5rem;
+  color: var(--slate-400);
+  font-size: 0.8rem;
+}
+.app__show-detail .detail__date {
+  color: var(--slate-400);
+  font-size: 0.7rem;
+}
+
+.app__show-detail .app__icon .icon__trash {
+  display: inline-block;
+  color: crimson;
+  width: 24px;
+  height: 24px;
+  margin-right: 0.2rem;
+  background-color: transparent;
+  border: none;
+}
+.app__show-detail .app__icon .icon__checkbox input {
+  width: 18px;
+  height: 18px;
+  border: 1px solid var(--slate-700);
+  border-radius: 8px;
+}
+
+/* SHOW DETAIL-------------------------- */
+
+@media screen and (min-width: 768px) {
+  .app__title {
+    font-size: 2.5rem;
+  }
+  .app-title__sort {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 1rem;
+    margin-bottom: 3rem;
+  }
+  .app__input-showNote {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  .app__title-addNote {
+    font-size: 1.5rem;
+  }
+  .app__title-showNote {
+    font-size: 1.5rem;
+  }
+  .app__button-add {
+    margin-top: 1rem;
+  }
+  .app__button-status .button__status .status {
+    margin-left: 4rem;
+  }
+  .app__show-detail {
+    margin-left: 4rem;
+    max-height: 120px;
+  }
+  .app__show-detail .detail__title {
+    margin-bottom: 0.8rem;
+    font-size: 1.2rem;
+  }
+  .app__show-detail .detail__description {
+    margin-bottom: 0.8rem;
+    font-size: 1rem;
+  }
+  .app__show-detail .detail__date {
+    font-size: 0.8rem;
+  }
+}
