@@ -15,7 +15,6 @@ This project is part of my portfolio and highlights my front-end development ski
 
 2. Navigate to the project folder:
 cd 01-note-app
-
 3. 	Install dependencies:
 npm install
 
