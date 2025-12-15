@@ -1,6 +1,11 @@
 # 📝 Notes App
 This project is part of my portfolio and highlights my front-end development skills.
 
+🎯 Goal  
+The goal of this Notes App project is to demonstrate practical front-end development skills through building a clean and responsive task management tool.  
+It allows users to add, delete, mark as complete, and sort notes (ascending, descending, or by completion status), showcasing how core UI/UX features can be implemented in React with efficient state management.  
+Beyond its technical demonstration, the app serves as a useful daily tool for organizing personal tasks and ideas, highlighting my ability to design user-friendly interfaces and optimize project structure using React and Vite.
+
 ## ✨ Features
 - ➕ Add new notes
 - ✅ Mark notes as complete (with checkbox to track done/undone notes)
